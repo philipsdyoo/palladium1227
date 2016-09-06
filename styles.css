@@ -6,6 +6,35 @@ body {
 	font-family: Helvetica, sans-serif;
 }
 .role {
-	width: 25%;
+	width: 23.5%;
+	margin-right: 2%;
 	float: left;
+	border-radius: 10%;
+	background-color: #ddd;
+}
+.role-end {
+	width: 23.5%;
+	float: left;
+	border-radius: 10%;
+	background-color: #ddd;
+}
+
+@media (max-width: 960px) {
+	.role {
+		width: 47%;
+		margin-bottom: 5%;
+	}
+	.role-end {
+		width: 47%;
+	}
+}
+
+@media (max-width: 600px) {
+	.role {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.role-end {
+		width: 100%;
+	}
 }

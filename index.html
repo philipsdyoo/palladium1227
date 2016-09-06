@@ -3,25 +3,26 @@
 	<head>
 		<title>Palladium 1227 Cleaning Schedule</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</head>
 	<body>
 		<h1>Palladium 1227 Cleaning Schedule</h1>
 		<h2>Week <span></span></h2>
 		<div class="role">
-			<h2>Kitchen</h2>
+			<h2><i class="fa fa-cutlery" aria-hidden="true"></i> Kitchen <i class="fa fa-cutlery" aria-hidden="true"></i></h2>
 			<p id="kitchen">Unknown</p>
 		</div>
 		<div class="role">
-			<h2>Bathroom</h2>
+			<h2><i class="fa fa-male" aria-hidden="true"></i> Bathroom <i class="fa fa-male" aria-hidden="true"></i></h2>
 			<p id="bathroom">Unknown</p>
 		</div>
 		<div class="role">
-			<h2>Common Room</h2>
+			<h2><i class="fa fa-users" aria-hidden="true"></i> Common Rm. <i class="fa fa-users" aria-hidden="true"></i></h2>
 			<p id="common-room">Unknown</p>
 		</div>
-		<div class="role">
-			<h2>Garbage</h2>
+		<div class="role-end">
+			<h2><i class="fa fa-trash" aria-hidden="true"></i> Garbage <i class="fa fa-trash" aria-hidden="true"></i></h2>
 			<p id="garbage">Unknown</p>
 		</div>
 
@@ -35,7 +36,7 @@
 			var people = ["Phil", "Namdi", "Jon", "Zach"];
 
 			$(document).ready(function() {
-				$("span").text(weeks);
+				$("span").text(weeks + 1);
 				$("#kitchen").text(people[(rotation + 3) % 4]);
 				$("#bathroom").text(people[(rotation + 2) % 4]);
 				$("#common-room").text(people[(rotation + 1) % 4]);
