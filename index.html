@@ -9,6 +9,7 @@
 	<body>
 		<h1>Palladium 1227 Cleaning Schedule</h1>
 		<h2>Week <span></span></h2>
+		<p class="test"></p>
 		<div class="role">
 			<h2><i class="fa fa-cutlery" aria-hidden="true"></i> Kitchen <i class="fa fa-cutlery" aria-hidden="true"></i></h2>
 			<p id="kitchen">Unknown</p>
@@ -41,6 +42,8 @@
 				$("#bathroom").text(people[(rotation + 2) % 4]);
 				$("#common-room").text(people[(rotation + 1) % 4]);
 				$("#garbage").text(people[(rotation + 0) % 4]);
+
+				$(".test").text(today);
 			});
 		</script>
 	</body>
