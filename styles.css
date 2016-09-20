@@ -9,13 +9,13 @@ body {
 	width: 23.5%;
 	margin-right: 2%;
 	float: left;
-	border-radius: 10%;
+	border-radius: 10px;
 	background-color: #ddd;
 }
 .role-end {
 	width: 23.5%;
 	float: left;
-	border-radius: 10%;
+	border-radius: 10px;
 	background-color: #ddd;
 }
 
